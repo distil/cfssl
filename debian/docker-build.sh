@@ -15,7 +15,7 @@ if [ "$NO_BUILD" != "1" ]; then
     docker build --tag distil/cfssl .
 fi
 docker run \
-    -it \
+    -i \
     --rm \
     -v "$(pwd):/home/go/src/github.com/distil/cfssl" \
     distil/cfssl \
