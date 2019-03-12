@@ -3,11 +3,10 @@ set -e
 
 # Setup dependencies
 mkdir -p opt/go
-GOPATH="$(pwd)/opt/go"
-
+export GOPATH="$(pwd)/opt/go"
 go get github.com/GeertJohan/go.rice
 go get github.com/GeertJohan/go.rice/rice
-PATH="$PATH:$GOPATH/bin"
+export PATH="$PATH:$GOPATH/bin"
 
 # Cleanup the old build files
 rm -rf dist
