@@ -4,7 +4,7 @@ set -aeux
 
 # This should be unique to your repository. Most have a README documenting how to build and produce a binary or
 # other type of artifact. In this case the docker_build.sh script contains npm commands.
-build_tools/docker-build.sh "./build"
+debian/docker-build.sh "./build"
 
 # Build the image that will run debuild.
 docker build . -f debian/Dockerfile.debuild -t debuild
