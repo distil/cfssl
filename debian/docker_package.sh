@@ -7,7 +7,7 @@ set -aeux
 docker run \
     -i \
     --rm \
-    -v "$(pwd):/home/go/src/github.com/distil/cfssl" \
+    -v "$(pwd):/home/go/src/github.com/distil" \
     distil/cfssl \
     "./script/build"
 
