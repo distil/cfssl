@@ -14,7 +14,7 @@ SHORT_HASH=$(git rev-parse --short HEAD)
 VERSION="1~$SHORT_HASH-1"
 
 # This should be unique to your repository.
-DIR="plt_transfer-$VERSION"
+DIR="cfssl-$VERSION"
 
 # Insert the version into the changelog.
 sed -i "s/VERSION/$VERSION/g" debian/changelog
