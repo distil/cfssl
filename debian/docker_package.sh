@@ -7,7 +7,7 @@ set -aeux
 docker run \
     -i \
     --rm \
-    -v "$(pwd):/home/go/src/github.com/distil" \
+    -v "$(pwd):/home/go/src/github.com/distil/cfssl" \
     "./script/build"
 
 # Build the image that will run debuild.
