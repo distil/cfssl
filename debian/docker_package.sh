@@ -7,7 +7,7 @@ set -aeux
 docker-build.sh "./script/build"
 
 # Build the image that will run debuild.
-docker build . -f Dockerfile.build -t debuild
+docker build . -f debian/Dockerfile.debuild -t debuild
 
 # Make the directory with the assets will care about.
 SHORT_HASH=$(git rev-parse --short HEAD)
