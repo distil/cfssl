@@ -1,7 +1,7 @@
 {
     "files": [
         {
-            "pattern": "*.deb",
+            "pattern": "../*.deb",
             "target": "ubuntu-main/"
         }
     ]
