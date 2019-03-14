@@ -1,5 +1,5 @@
-PACKAGE (VERSION) UNRELEASED; urgency=low
+PACKAGE (0.1.0) stable; urgency=low
 
-  *
+  * Initial release
 
  -- Jenkins <jenkins@distilnetworks.com>  Fri, 20 Mar 2015 04:31:10 -0400
