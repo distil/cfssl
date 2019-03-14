@@ -1,5 +1,5 @@
-PACKAGE (0.1.0) stable; urgency=low
+distil-cfssl (0.1.0) stable; urgency=low
 
   * Initial release
 
- -- Jenkins <jenkins@distilnetworks.com>  Fri, 20 Mar 2015 04:31:10 -0400
+ -- Jenkins <jenkins@distilnetworks.com>  Fri, 14 Mar 2019 04:31:10 -0400
