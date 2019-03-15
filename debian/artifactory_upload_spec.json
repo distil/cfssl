@@ -1,0 +1,8 @@
+{
+    "files": [
+        {
+            "pattern": "*.deb",
+            "target": "debian-main/"
+        }
+    ]
+}

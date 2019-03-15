@@ -1,0 +1,11 @@
+Source: distil-cfssl
+Section: platform
+Priority: extra
+Maintainer: Grant Joy <grant.joy@distilnetworks.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.2
+Homepage: distilnetworks.com
+
+Package: distil-cfssl
+Architecture: amd64
+Description: distil-cfssl

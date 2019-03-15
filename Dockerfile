@@ -1,5 +1,8 @@
 FROM golang:1.6
 
+RUN apt-get update
+RUN apt-get --yes install build-essential debhelper devscripts fakeroot
+
 ENV USER root
 
 WORKDIR /go/src/github.com/cloudflare/cfssl
@@ -13,4 +16,5 @@ RUN go get github.com/GeertJohan/go.rice/rice && rice embed-go -i=./cli/serve &&
 EXPOSE 8888
 
 ENTRYPOINT ["cfssl"]
-CMD ["--help"]
+
+VOLUME ["/build"]
