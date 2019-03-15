@@ -2,7 +2,7 @@
     "files": [
         {
             "pattern": "*.deb",
-            "target": "ubuntu-main/"
+            "target": "debian-main/"
         }
     ]
 }
