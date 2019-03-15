@@ -11,9 +11,8 @@ export DH_VERBOSE=1
 %:
 	dh $@
 override_dh_auto_install:
-	mkdir -p debian/tmp
 	mkdir -p debian/tmp/src
-	cp -r /var/lib/jenkins/jobs/cfssl/jobs/package/workspace/cfssl/*  debian/tmp/src
+	cp -r dist/linux-amd64/* debian/tmp/src
 override_dh_shlibdeps:
 	echo ""
 override_dh_usrlocal:
