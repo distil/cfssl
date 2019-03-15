@@ -11,7 +11,8 @@ export DH_VERBOSE=1
 %:
 	dh $@
 override_dh_auto_install:
-	mkdir -p debian/tmp/src
+	mkdir debian/tmp
+	mkdir debian/tmp/src
 	cp -r dist/linux-amd64/* debian/tmp/src
 override_dh_shlibdeps:
 	echo ""
