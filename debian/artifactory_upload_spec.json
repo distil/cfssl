@@ -2,7 +2,8 @@
     "files": [
         {
             "pattern": "*.deb",
-            "target": "debian-main/"
+            "target": "debian-main/",
+            "props":"deb.distribution=xenial;deb.component=main;deb.architecture=amd64"
         }
     ]
 }
