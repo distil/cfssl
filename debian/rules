@@ -5,9 +5,8 @@ export DH_VERBOSE=1
 %:
 	dh $@
 override_dh_auto_install:
-	mkdir debian/tmp
-	mkdir debian/tmp/src
-	cp dist/linux-amd64/* debian/tmp/src
+	mkdir -p debian/distil-cfssl/src
+	cp dist/linux-amd64/* debian/distil-cfssl/src
 override_dh_shlibdeps:
 	echo ""
 override_dh_usrlocal:
